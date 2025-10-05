@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f6fa; /* About Me match */
+  background-color: #f4f6fa; /* matches About Me */
   text-align: center;
   line-height: 1.6;
   color: #333;
@@ -43,6 +43,35 @@ nav a {
 nav a:hover {
   color: #ff9a9e;
   text-decoration: underline;
+}
+
+/* ================= Intro Section ================= */
+#intro {
+  background-color: #e0f7fa; /* soft, welcoming color */
+  color: #004d40; /* dark teal for contrast */
+  padding: 40px 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#intro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+#intro h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 /* ================= Sections ================= */
@@ -110,3 +139,4 @@ blockquote {
   display: inline-block;
   margin-top: 15px;
 }
+
