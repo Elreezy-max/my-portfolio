@@ -1,0 +1,93 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6fa; /* matches About Me */
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Header & Footer */
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+/* Nav Bar */
+nav {
+  margin: 15px 0;
+  background: #555;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  border: 2px solid #000;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  background: #fff;
+}
+
+/* Section 1: Buttons */
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn.red { background: crimson; color: white; }
+.btn.green { background: seagreen; color: white; }
+.btn.shadow { background: steelblue; color: white; box-shadow: 2px 2px 5px rgba(0,0,0,0.4); }
+
+/* Section 2: Image Hover */
+.hover-img {
+  width: 250px;
+  transition: transform 0.3s, opacity 0.3s;
+  border-radius: 10px;
+}
+
+.hover-img:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+/* Section 3: Gradient + Quote */
+#quote {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-left: 5px solid #333;
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  margin-top: 15px;
+}
+
