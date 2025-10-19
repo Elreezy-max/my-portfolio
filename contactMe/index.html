@@ -55,35 +55,42 @@
         
             <label for="range">Interest Level (1–10):</label>
             <input type="range" id="range" min="1" max="10" value="5">
-        
-            <!-- Radio Buttons -->
+        </section>
+        <section>
+            <!-- Creates three options for a user to select from -->
             <label>Preferred Contact Method:</label>
             <div class="inline-options">
               <label><input type="radio" name="contactMethod" value="Email" checked> Email</label>
               <label><input type="radio" name="contactMethod" value="Phone"> Phone</label>
               <label><input type="radio" name="contactMethod" value="Text"> Text</label>
             </div>
-
-            <!-- Checkbox -->
+        </section>
+        <section>
+            <!-- Uses checkboxes to select reason for Interests-->
             <label>Services Interested In:</label>
             <div class="inline-options">
               <label><input type="checkbox" name="service" value="Web Design"> Web Design</label>
               <label><input type="checkbox" name="service" value="Consulting"> Consulting</label>
               <label><input type="checkbox" name="service" value="Other"> Other</label>
             </div>
-        
-            <!-- Select Dropdown -->
+        </section>
+        <section>
+            <!-- Uses a dropdown for topic to choose from -->
             <label for="topic">Topic:</label>
             <select id="topic">
             <option value="General">General Inquiry</option>
             <option value="Support">Support</option>
             <option value="Feedback">Feedback</option>
+        </section>
+        <section>
             <!-- Textarea -->
             <label for="message">Message:</label>
             <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
             </select>
-            <!-- Submit Button -->
+        <section>
+            <!--Creates a submit button to submit form -->
             <button type="submit">Send</button>
+        </section>section>
           </form>
 
     </main>
