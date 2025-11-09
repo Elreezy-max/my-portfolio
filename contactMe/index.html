@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../cssProjects/styles/style.css">
-    <link rel="stylesheet" href="css/contact.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../cssProjects/styles/style.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
+
 <body>
     <header>
         <h1 style="text-align: center; color:#2c3e50; font-family:Arial, sans-serif;">
@@ -23,8 +26,7 @@
     </header>
 
     <main>
-        <section>
-          <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm">
             <h2>Contact Me</h2>
 
             <!-- Basic Inputs -->
@@ -39,6 +41,7 @@
 
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" placeholder="(123) 456-7890">
+
             <label for="website">Website:</label>
             <input type="url" id="website" placeholder="https://example.com">
 
@@ -56,44 +59,39 @@
         
             <label for="range">Interest Level (1–10):</label>
             <input type="range" id="range" min="1" max="10" value="5">
-        </section>
-        <section>
-            <!-- Creates three options for a user to select from -->
+
+            <!-- Radio Options -->
             <label>Preferred Contact Method:</label>
             <div class="inline-options">
               <label><input type="radio" name="contactMethod" value="Email" checked> Email</label>
               <label><input type="radio" name="contactMethod" value="Phone"> Phone</label>
               <label><input type="radio" name="contactMethod" value="Text"> Text</label>
             </div>
-        </section>
-        <section>
-            <!-- Uses checkboxes to select reason for Interests-->
+
+            <!-- Checkboxes -->
             <label>Services Interested In:</label>
             <div class="inline-options">
               <label><input type="checkbox" name="service" value="Web Design"> Web Design</label>
               <label><input type="checkbox" name="service" value="Consulting"> Consulting</label>
               <label><input type="checkbox" name="service" value="Other"> Other</label>
             </div>
-        </section>
-        <section>
-            <!-- Uses a dropdown for topic to choose from -->
+
+            <!-- Dropdown -->
             <label for="topic">Topic:</label>
             <select id="topic">
-            <option value="General">General Inquiry</option>
-            <option value="Support">Support</option>
-            <option value="Feedback">Feedback</option>
-        </section>
-        <section>
-            <!-- Textarea -->
+                <option value="General">General Inquiry</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+            </select>
+
+            <!-- Message -->
             <label for="message">Message:</label>
             <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
-            </select>
-        </section>
-        <section>
-            <!--Creates a submit button to submit form -->
+
+            <!-- Submit -->
             <button type="submit">Send</button>
-        </section>
-          </form>
+        </form>
+
         <!-- Table container -->
         <div id="resultContainer" style="display:none;">
           <h2>Submitted Information</h2>
@@ -102,7 +100,6 @@
               <tr>
                 <th>Field</th>
                 <th>Value</th>
-                <!--Javascript will add more rows!-->
               </tr>
             </thead>
             <tbody></tbody>
@@ -113,6 +110,9 @@
     <footer>
         <p>Created by Brandon Elrod</p>
     </footer>
+
+    <!-- JavaScript -->
     <script src="scripts/form.js"></script>
 </body>
 </html>
+
